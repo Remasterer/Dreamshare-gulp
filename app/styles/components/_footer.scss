@@ -1,0 +1,121 @@
+.footer{
+  margin-top: 100px;
+  border-top:1px $marker-color solid;
+}
+.footer__inner{
+  padding-top: 38px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  height: 260px;
+}
+.footer__left{
+  display: flex;
+}
+.footer__brand{
+  color: $marker-color;
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer__menu{
+  margin-left: 125px;
+}
+.list-caption{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: $txt-black-bold-color;
+}
+.footer__menu-list{
+  margin-top: 11px;
+}
+.footer__menu-list-links{
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  color: $form-text-color;
+  transition: color 0.5s;
+}
+.footer__menu-list-links:hover{
+  color: $marker-color;
+}
+.copywrite__text{
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  color: #CCCCCC;
+}
+.copywrite__brand{
+  margin-top: 7px;
+}
+@media only screen and (min-width:320px) and (max-width: 767px) {
+  .footer__left{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__inner{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__brand{
+    margin-bottom: 12px;
+  }
+  .footer__menu{
+    margin: 0 auto;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__menu:nth-child(3){
+    margin-top: 7px;
+  }
+  .footer__menu-list{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    flex-wrap: wrap;
+  }
+   
+  .footer__menu-list-links{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 14px;
+  }
+    .footer__menu-list-links:nth-child(1),
+    .footer__menu-list-links:nth-child(5) {
+      margin-left: 0;
+    }
+   .footer__menu-list::before,
+   .footer__menu-list::after {
+    content: '';
+    width: 100%;
+    order: 1;
+  }
+
+  .footer__menu-list-links:nth-child(n + 5) {
+    order: 1;
+  }
+  .footer__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 14px;
+    padding-bottom: 24px;
+  }
+  .copywrite__text{
+    justify-content: center;
+  }
+  
+}

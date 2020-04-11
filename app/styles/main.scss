@@ -1,0 +1,28 @@
+@import 'base/module';
+@import 'components/module';
+@import 'pages/module';
+
+.container{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 941px;
+  
+}
+body{
+  font-family: Montserrat;
+  color: $txt-main-white-color;
+}
+button{
+  background:none;
+  border:none;
+  font-family: Montserrat;
+  color: $txt-main-white-color;
+}
+.main,.header,.footer{
+  padding: 0 10px;
+}
+.main-block{
+  display: flex;
+  flex-direction: column;
+  margin-top: 89px;
+}
